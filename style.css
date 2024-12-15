@@ -1,0 +1,694 @@
+
+.logo{
+    width: 160px;
+    height: 60px;
+}
+
+
+/* Top Header Styling */
+ .top-header {
+    background-color: #003242; /* Light background */
+    font-size: 14px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1030; /* Higher than the navbar */
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.top-header a {
+    text-decoration: none;
+    color: white; /* Dark text */
+}
+
+.top-header a:hover {
+    color: #007bff; /* Bootstrap Primary Blue */
+}
+
+.icon-spacing {
+    margin-right: 8px;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: white; /* Dark Gray */
+    font-size: 16px;
+    margin-top: 40px; /* Adjust for top header */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color:#003242 ;
+}
+
+.navbar-nav .nav-link {
+    color: #003242 ;
+    font-weight: 600;
+    font-size: 17px;
+    padding: 10px;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: rgb(231, 240, 237);
+    color: #003242 !important;
+}
+
+.home{
+    background-color: #003242;
+}
+
+    /* Navbar Toggler Icon Color and Border */
+    .navbar-toggler {
+        border: 1px solid #003242 !important; /* Change the border to black */
+        background-color: #003242;
+    }
+
+    .navbar-toggler-icon {
+        background-color: #003242 !important; /* Change the toggler icon color to black */
+    }
+
+       /* Mobile-specific background color for the dropdown menu */
+       @media (max-width: 991px) {
+        /* Change background color for the navbar collapse dropdown on mobile screens */
+        .navbar-collapse {
+            background-color: #003242 !important; /* Mobile-specific background color */
+            margin-top: 5px;
+        }
+        .nav-link{
+            color: white !important;
+        }
+    }
+
+    /* hero======================= */
+     /* Hero Section Styling */
+     .hero-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px 0;
+        border-radius: 10px;
+        margin-top: 80px;
+    }
+
+    .hero-left {
+        flex: 1;
+        text-align: left;
+        padding: 0 20px;
+    }
+
+    .hero-left h1 {
+        font-size: 36px;
+        font-weight: bold;
+        color: #343a40;
+        line-height: 1.2;
+        text-transform: uppercase;
+    }
+
+    .hero-left p {
+        font-size: 18px;
+        color: #6c757d;
+        margin-top: 20px;
+        line-height: 1.6;
+    }
+
+    .hero-left .btn {
+        margin-top: 20px;
+        background-color: #007bff;
+        color: #fff;
+        padding: 12px 30px;
+        font-size: 18px;
+        border-radius: 5px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: bold;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .hero-left .btn:hover {
+        background-color: #0056b3;
+    }
+
+    .hero-right {
+        flex: 1;
+        text-align: right;
+    }
+
+    .hero-right img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+
+    .hero-right img:hover {
+        transform: scale(1.05);
+    }
+
+    /* Media Queries for Mobile Devices */
+    @media (max-width: 991px) {
+        .hero-section {
+            flex-wrap: wrap; /* Allow wrapping of content */
+            text-align: center;
+            padding: 30px 10px;
+        }
+
+        .hero-left {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .hero-left h1 {
+            font-size: 28px;
+        }
+
+        .hero-left p {
+            font-size: 16px;
+        }
+
+        .hero-left .btn {
+            font-size: 16px;
+            padding: 10px 25px;
+        }
+
+        .hero-right img {
+            width: 90%;
+            margin-top: 20px;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .hero-left h1 {
+            font-size: 10px;
+        }
+
+        .hero-left p {
+            font-size: 10px;
+        }
+
+        .hero-left .btn {
+            font-size: 10px;
+            padding: 8px 20px;
+        }
+
+        .hero-right img {
+            width: 100%;
+        }
+    }
+
+    .btn-hero{
+        background-color: #003242 !important;
+    }
+     /* About Section Styling */
+     .about-section {
+        padding: 40px 20px;
+    }
+
+    .about-section .about-left img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .about-section .about-right h2 {
+        font-size: 32px;
+        font-weight: bold;
+        color: #343a40;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+
+    .about-section .about-right p {
+        font-size: 18px;
+        color: #6c757d;
+        line-height: 1.8;
+    }
+
+    .about-section .btn {
+        margin-top: 30px;
+        background-color: #007bff;
+        color: #fff;
+        padding: 12px 30px;
+        font-size: 18px;
+        border-radius: 5px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: bold;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .about-section .btn:hover {
+        background-color: #0056b3;
+    }
+
+    /* Mobile Responsiveness */
+    @media (max-width: 991px) {
+        .about-section .about-left
+        {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .about-section .about-left img {
+            max-width: 90%;
+
+        }
+
+        .about-section .about-right h2 {
+            font-size: 26px;
+        }
+
+        .about-section .about-right p {
+            font-size: 16px;
+        }
+
+        .about-section .btn {
+            font-size: 16px;
+            padding: 10px 25px;
+        }
+    }
+
+
+    /* diseases */
+
+    .disease-section {
+        padding: 80px 20px;
+        background-color: #003242;
+    }
+    .disease-item {
+        text-align: center;
+        margin-bottom: 30px;
+        padding: 20px;
+        background-color: #0b3f50;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .disease-item i {
+        font-size: 40px;
+        color: white;
+        margin-bottom: 15px;
+    }
+    .disease-item h4 {
+        font-size: 18px;
+        font-weight: bold;
+        color: white;
+    }
+    /* Mobile Responsiveness */
+    @media (max-width: 767px) {
+        .disease-item {
+            margin-bottom: 15px;
+        }
+    }
+
+    .btn-white {
+        background-color: white;
+        font-weight: 600;
+        padding: 10px 20px;
+        font-size: 20px;
+    }
+    .btn-white:hover{
+        background-color: white;
+
+    }
+
+
+
+    /* =================== */
+
+     /* Custom Styles for the Section */
+     .homeopathy-section {
+        padding: 80px 20px;
+        background-color: #f9f9f9;
+    }
+
+    .homeopathy-text {
+        font-size: 18px;
+        color: #343a40;
+        line-height: 1.8;
+    }
+
+    .homeopathy-text h2 {
+        font-size: 28px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .homeopathy-text .btn {
+        margin-top: 20px;
+        background-color: #003242;
+        color: #fff;
+        border: none;
+        padding: 12px 25px;
+        font-size: 16px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+    .homeopathy-text .btn:hover {
+        background-color: #0f5369;
+    }
+
+    .homeopathy-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    /* Mobile Responsiveness */
+    @media (max-width: 767px) {
+        .homeopathy-image {
+            display: none;
+        }
+    }
+
+
+    /* ============cta */
+       /* Custom Styles for the CTA Section */
+       .cta-section {
+        position: relative;
+        background-color: #003242; /* Solid color background */
+        padding: 100px 20px;
+        color: #fff;
+        text-align: center;
+    }
+
+    /* Black shadow overlay to darken the background with blur effect */
+    .cta-section::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.3); /* Dark overlay */
+        filter: blur(5px); /* Blur effect */
+        z-index: -1; /* Place overlay behind text */
+    }
+
+    .cta-section h2 {
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .cta-section p {
+        font-size: 18px;
+        line-height: 1.6;
+        margin-bottom: 30px;
+    }
+
+    .cta-section .btn {
+        font-size: 18px;
+        padding: 12px 30px;
+        background-color:white; /* Button color */
+        border: none;
+        border-radius: 5px;
+        color: black;
+        text-transform: uppercase;
+        transition: background-color 0.3s ease;
+        font-weight: 600;
+    }
+
+
+
+    /* Mobile Responsiveness */
+    @media (max-width: 767px) {
+        .cta-section h2 {
+            font-size: 28px;
+        }
+
+        .cta-section p {
+            font-size: 16px;
+        }
+
+        .cta-section .btn {
+            font-size: 16px;
+        }
+    }
+
+
+    /* contact Section css */
+    .clinic-section {
+        padding: 60px 20px;
+        background-color: #f8f9fa;
+    }
+
+    .clinic-section h2 {
+        font-size: 32px;
+        font-weight: bold;
+        color: #007bff;
+        margin-bottom: 20px;
+    }
+
+    .clinic-section p {
+        font-size: 16px;
+        line-height: 1.8;
+        margin-bottom: 20px;
+    }
+
+    .clinic-details ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .clinic-details ul li {
+        margin-bottom: 15px;
+        font-size: 16px;
+    }
+
+    .clinic-details ul li::before {
+        content: "✔";
+        color: #007bff;
+        font-weight: bold;
+        margin-right: 10px;
+    }
+
+    .map-container {
+        width: 100%;
+        height: 300px;
+    }
+
+    @media (max-width: 767px) {
+        .map-container {
+            display: none;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .clinic-section .name {
+            font-size: 24px; /* Smaller font size for better readability on smaller screens */
+            color: #003242; /* Keep the same color for consistency */
+            margin: 10px 0; /* Add some spacing for a balanced look */
+            line-height: 40px;
+        }
+    }
+
+    /* award section */
+
+    .awards-section {
+        padding: 60px 20px;
+        background-color: #f8f9fa;
+        text-align: center;
+    }
+
+    .awards-section h2 {
+        font-size: 36px;
+        font-weight: bold;
+        color: #003242;
+        margin-bottom: 40px;
+    }
+
+    .award-card {
+        background-color: #ffffff;
+        border: 4px solid #003242 !important;
+        border-radius: 10px;
+        padding: 20px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .award-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .award-card img {
+        max-width: 80px;
+        margin-bottom: 15px;
+    }
+
+    .award-card h5 {
+        font-size: 20px;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    .award-card p {
+        font-size: 16px;
+        color: #555;
+    }
+
+    /* media query ===================== */
+    h1 {
+        font-family: 'Arial', sans-serif; /* Set a clear font */
+        font-weight: bold;               /* Bold for emphasis */
+        margin-bottom: 20px;             /* Space below the heading */
+        line-height: 1.2; 
+        color: #003242;               /* Improves readability */
+    }
+    
+    /* Default size for small devices (mobile) */
+    @media (max-width: 576px) {
+        h1 {
+            font-size: 24px; /* Smaller font for smaller screens */
+        }
+    }
+    
+    /* Medium devices (tablets) */
+    @media (min-width: 577px) and (max-width: 768px) {
+        h1 {
+            font-size: 32px; /* Slightly larger for tablets */
+        }
+    }
+    
+    /* Large devices (desktops) */
+    @media (min-width: 769px) and (max-width: 1200px) {
+        h1 {
+            font-size: 40px; /* Ideal size for desktops */
+        }
+    }
+    
+    /* Extra-large devices (wider screens) */
+    @media (min-width: 1201px) {
+        h1 {
+            font-size: 48px; /* Larger headings for wide screens */
+        }
+    }
+    
+
+    h2 {
+        font-family: 'Arial', sans-serif; /* Clean, modern font */
+        font-weight: 600;                /* Semi-bold for emphasis */
+        margin-bottom: 15px;             /* Space below the heading */
+        line-height: 1.3;                /* Proper line spacing for readability */
+    }
+    
+    /* Default size for small devices (mobile) */
+    @media (max-width: 576px) {
+        h2 {
+            font-size: 20px; /* Compact size for smaller screens */
+        }
+    }
+    
+    /* Medium devices (tablets) */
+    @media (min-width: 577px) and (max-width: 768px) {
+        h2 {
+            font-size: 24px; /* Slightly larger for tablets */
+        }
+    }
+    
+    /* Large devices (desktops) */
+    @media (min-width: 769px) and (max-width: 1200px) {
+        h2 {
+            font-size: 28px; /* Suitable size for desktops */
+        }
+    }
+    
+    /* Extra-large devices (wider screens) */
+    @media (min-width: 1201px) {
+        h2 {
+            font-size: 32px; /* Larger headings for spacious layouts */
+        }
+    }
+    
+
+    p {
+        font-family: 'Roboto', sans-serif; /* Modern and readable font */
+        font-size: 16px;                  /* Default font size */
+        line-height: 1.6;                 /* Comfortable spacing between lines */
+        color: #555;                      /* Neutral color for easy readability */
+        margin-bottom: 15px;              /* Space below the paragraph */
+    }
+    
+    /* Small devices (mobile) */
+    @media (max-width: 576px) {
+        p {
+            font-size: 14px; /* Smaller font size for smaller screens */
+            line-height: 1.5; /* Slightly reduced line spacing */
+        }
+    }
+    
+    /* Medium devices (tablets) */
+    @media (min-width: 577px) and (max-width: 768px) {
+        p {
+            font-size: 15px; /* Moderate size for tablets */
+            line-height: 1.6; /* Comfortable spacing */
+        }
+    }
+    
+    /* Large devices (desktops) */
+    @media (min-width: 769px) and (max-width: 1200px) {
+        p {
+            font-size: 16px; /* Standard size for desktops */
+            line-height: 1.7; /* Enhanced spacing */
+        }
+    }
+    
+    /* Extra-large devices (wider screens) */
+    @media (min-width: 1201px) {
+        p {
+            font-size: 18px; /* Larger font size for spacious layouts */
+            line-height: 1.8; /* Increased spacing for better readability */
+        }
+    }
+    
+
+    /* Sticky Buttons Container */
+.sticky-buttons {
+    position: fixed;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 9999;
+}
+
+/* Call Button */
+.call-button {
+    background-color: #25d366; /* WhatsApp green */
+    color: #fff;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 24px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* WhatsApp Button */
+.whatsapp-button {
+    background-color: #34b7f1; /* Call blue */
+    color: #fff;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 24px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Hover Effect for Buttons */
+.call-button:hover, .whatsapp-button:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
